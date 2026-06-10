@@ -23,9 +23,9 @@ generate_service_cert() {
 
 # 3. Generación de certificados por servicio
 generate_service_cert "galera" "galera-node" "galera"
-generate_service_cert "web" "web-server" "web"
+generate_service_cert "web" "web" "web"
 generate_service_cert "proxy" "proxy-frontend" "proxy"
-generate_service_cert "proxysql" "proxysql-server" "proxysql"
+generate_service_cert "proxysql" "proxysql" "proxysql"
 
 echo "======================================================================"
 echo " OPERACIÓN COMPLETADA: PKI generada con éxito en la carpeta pki-cluster/"

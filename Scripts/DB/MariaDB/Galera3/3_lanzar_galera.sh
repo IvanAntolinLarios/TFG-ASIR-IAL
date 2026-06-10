@@ -72,7 +72,7 @@ CREATE USER '$SST_USER'@'localhost' IDENTIFIED BY '$SST_PASS';
 GRANT RELOAD, PROCESS, LOCK TABLES, REPLICATION CLIENT ON *.* TO '$SST_USER'@'localhost';
 
 -- 2. Usuario Monitor (Para los healthchecks del ProxySQL)
-CREATE USER 'monitor'$IP_PROXYSQL'' IDENTIFIED BY '$MONITOR_PASS';
+CREATE USER 'monitor'@'$IP_PROXYSQL' IDENTIFIED BY '$MONITOR_PASS';
 GRANT USAGE, REPLICATION CLIENT ON *.* TO 'monitor'@'$IP_PROXYSQL';
 
 -- 3. Bases de datos del proyecto

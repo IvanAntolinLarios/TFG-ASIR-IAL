@@ -93,8 +93,7 @@ CREATE USER 'admin_supremo'@'$IP_PROXYSQL' IDENTIFIED BY '$ADMIN_PASS_F_PROXY';
 GRANT ALL PRIVILEGES ON *.* TO 'admin_supremo'@'$IP_PROXYSQL' WITH GRANT OPTION;
 
 -- 7. Admin Gestión (Desde KING - Lectura y Gestión de Usuarios)
--- No tiene permisos de escritura de datos, pero puede gestionar
- la plataforma
+-- No tiene permisos de escritura de datos, pero puede gestionar la plataforma
 CREATE USER 'admin_supremo'@'$IP_KING' IDENTIFIED BY '$ADMIN_PASS_F_KING';
 GRANT SELECT, SHOW DATABASES, CREATE USER, GRANT OPTION, PROCESS ON *.* TO 'admin_supremo'@'$IP_KING';
 

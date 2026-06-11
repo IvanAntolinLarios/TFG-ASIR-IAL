@@ -8,7 +8,7 @@ Para garantizar la integridad de la infraestructura y evitar errores de dependen
 
 Las maquinas estaran todas en una red interna (salvo la primera interfaz del router por supuesto) con el "PROMISCUOUS MODE" en modo "Permitir MVs" sino, no funcionara el trafico de VLAN
 
-<img width="547" height="259" alt="image" src="https://github.com/user-attachments/assets/d08bd8e8-4ee0-4cfc-ba23-05b93cf0a133" />
+<img width="556" height="265" alt="image" src="https://github.com/user-attachments/assets/d4763aff-249d-4c34-ac89-ed3ef33e6748" />
 
 ---
 
